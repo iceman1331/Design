@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#85C1E9">
+
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Description</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="animations.css" />
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="Pre-footer_buttons/footer_button_style.css" />
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+	<script src="NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="NavBar/bootstrap.min.js" charset="utf-8"></script>
+	<script src="NavBar/script.js" charset="utf-8"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="loader">
+		<video autoplay muted loop style="height: auto;" src="loader.mp4"></video>
+	</div>
+
+	<!--Loader-->
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // new class = "loader hidden"
+		});
+	</script>
+
+
+
+
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light py-0" id="mynav" style="background-color: #ffdb82;">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#"> <i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="">Description</a>
+							<a class="dropdown-item" href="#">Contribution</a>
+							<a class="dropdown-item" href="#">Engineering Success</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Parts Collection</a>
+							<a class="dropdown-item" href="#">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">IHP</a>
+							<a class="dropdown-item" href="#">Education</a>
+							<a class="dropdown-item" href="#">Public Engagement</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> Team
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Team</a>
+							<a class="dropdown-item" href="#">Supervisors</a>
+							<a class="dropdown-item" href="#">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohzard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Biosafety</a>
+							<a class="dropdown-item" href="#">Biosecurity</a>
+							<a class="dropdown-item" href="#">Safe by Design</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-dna"></i> Modelling
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Overview</a>
+							<a class="dropdown-item" href="#">Subsections</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-vial"></i> Entrepreneurship
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Implementation</a>
+							<a class="dropdown-item" href="#">Hardware</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+
+
+
+
+
+
+
+
+	<div id="cta">
+		<div class="desc-title">
+			<h1> Design </h1>
+		</div>
+	</div>
+
+
+
+	<div class="animatedParent animateOnce">
+		<div class="animated fadeInLeft">
+			<div class="content">
+				<div class="container">
+					<h1 class="text hr1">
+						<r> P</r>roject Design
+					</h1>
+					<p>
+						BIG PIE is a biological delivery system created to allow insulin production in-vivo(within the body). The objective of BIG PIE is to compensate for the decreased/defective beta islet cells in the pancreas of diabetes patients by serving as a natural alternative within the host and replacing the need for external sources of insulin in diabetes patients.
+						<br>
+						The design of this project has been a continuous process that has been refined constantly to create a delivery system which is safe by design and does not impact the host immunity.
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="animatedParent animateOnce">
+		<div class="animated fadeInRight">
+			<div class="content" style="background-color:#f2f2f2;">
+				<div class="container">
+					<h1 class="text hr1">Project Principle</h1>
+					<p class="text">
+						Our project is based on the principle of “transdifferentiation”. We intend to reprogram a subset of the newly differentiated intestinal crypt cells in the duodenum to β-islet-like cells, capable of glucose-responsive insulin secretion.<br>
+						Previously transdifferentiation has been performed in human organoids and mice models with the aid of adenovirus vectors: a viral delivery system. But due to the pathogenic nature of viruses and the risks associated with them
+						(mutagenesis, oncogenesis<sup>1</sup> and immunogenicity<sup>2</sup>). We decided to replace the viral vector with a probiotic bacterial vector that is safely accepted into the host.
+						Keeping in mind these aspects our design stands on 4 pillars which form the backbone of our work.
+					</p>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="animatedParent animateOnce">
+		<div class="animated fadeIn">
+			<div class="content">
+				<div class="container">
+					<h2 class="text">1) Vector for Transport and Delivery</h2>
+					<p class="text">
+						In order to reduce the risk involved in the delivery system. We decided to use an FDA approved probiotic bacteria E.coli Nissle 1917. The bacteria will be cloned with plasmids expressing a molecular syringe called EPEC T3SS along with the 3 transcription factors of our choice PDX1, MAFA and NGN3 which will be maintained in the form of a single linear polypeptide an export signal peptide called Map 20.
+					</p>
+					<p>
+						E.coli nissle is a nonpathogenic Gram-negative strain used in the therapies of many gastrointestinal disorders including diarrhea<sup>6</sup>, irritable bowel syndrome etc. and hence would convenience be able to reach the crypt cells in the duodenum of the small intestine.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="collapsible-container">
+		<button class="collapsible-coli" style="outline: none;">Why use Ecoli. Nissle 1917?</button>
+		<div class="content-collapsible">
+			<div>
+				<div>
+					<p>
+						<br>
+						E.coli Nissle is classified as a probiotic due to its lack of defined virulence factors along with the expression of fitness factors such as microcins, and iron uptake systems, and proteases which may support its colonization of the human gut.
+						EcN exhibits a semi-rough lipopolysaccharide (LPS) phenotype and serum sensitivity and does not produce known toxins<sup>9</sup>. EcN colonizes the intestine within a few days and it remains as colonic flora for months after administration<sup>10</sup>.
+					</p>
+					<div class="p-linklist" style="text-align: left;">
+						EcN advantages :
+						<li>
+							Intestinal anti-inflammatory effect.
+						</li>
+						<li>
+							It has direct antimicrobial effects: it inhibits EHEC (E. coli EDL933) colonization in animal models.
+						</li>
+						<li>
+							It is involved in the bacterial-epithelial crosstalk (“Host cell signaling”) by biofilm formation: it expresses F1C Fimbria. This is very important in the formation of biofilm, and to adherence epithelial cells.
+						</li>
+						<li>
+							Its flagellum is the major “propulsor” in vivo, which allow this probiotic strain to efficiently compete with pathogens for binding sites on host tissue.
+						</li>
+						<li>
+							It directly stimulates defensin production by intestinal epithelial cells, such as the human beta-defensin that inhibits adhesion and invasion of intestinal cells by pathogenic adherent invasive E. coli, which play a key role as trigger in immune response in IBD patients.
+						</li>
+						<p></p>
+					</div>
+
+					<div class="button_know" align="center">
+						<a class="external_knowmore" href="https://www.wjgnet.com/1007-9327/full/v22/i24/5505.htm" target="_blank" rel="nofollow">
+							<span>Read more</span><br>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="animatedParent animateOnce " data-appear-top-offset='-200'>
+		<div class="animated fadeIn">
+			<div class="content" style="background-color:#fffff;">
+				<div class="container">
+					<h2 class="text">2) Attachment and Injection of Proteins</h2>
+					<p class="text">
+						We intend to use a novel delivery mechanism : Type III Secretion System (T3SS)8 -‘molecular syringe’ found on certain Gram-negative bacteria. The T3SS cloned in E.coli Nissle will transport the linear polypeptide sequence consisting of effector proteins’ - PDX, MAFA and NGN3 into the crypt cells in the gut.
+					</p>
+
+					<p>
+						The EPEC T3SS is an injectisome structurally comprising a ‘basal body’ and ‘needle-like filament’. Proteins will be delivered by T3SS in a two-step process. Firstly, contact with the intestinal epithelial cells will trigger the secretion of a hydrophobic ‘translocon’ protein, which will insert itself into the cell membrane forming a pore. This will create a continuous path between the bacterial and eukaryotic cytoplasm through the lumen of the needle and pore.
+
+						Due to the small dimensions of the channel the effector proteins will have to be unfolded during its passage. The proteins will be introduced into the T3SS with the aid of MAP20, a short N terminal signal tag and downstream chaperone binding site. The chaperone CesT will help maintain the polypeptide in a partially unfolded state to facilitate delivery through the secretion channel of T3SS. Both the protein unfolding and secretion are powered through a combination of ATPase activity and the proton motive force. (Ref. 12). The factors will be translocated across the T3SS membrane and delivered into the cytoplasm of the undifferentiated crypt cells where they will fold into their native states and get translocated into the nucleus, and exert their functions.
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="collapsible-container">
+		<button class="collapsible-coli" style="outline: none;">Polyprotein sequence being introduced</button>
+		<div class="content-collapsible">
+			<div>
+				<div>
+					<p>
+						<br>
+						Transcription factor-mediated “reprogramming”, or “trans-differentiation”, approaches have been used to regenerate beta-like cells in vitro and in vivo. The studies have demonstrated that overexpression PDX1, NEUROG3, and/or MAFA, can reprogram the fate of various non-beta cell types into glucose responsive insulin-producing cells.
+					</p>
+
+
+					<p>
+						<b>PDX1</b><br> Also known as insulin promoter factor 1, is a homeodomain transcription factor. PDX1 is required for early embryonic development of the pancreas and the differentiation of endocrine cell types including beta cells. In mature beta cells, depletion and reduction of PDX1 induces glucose intolerance, which suggests the critical role of PDX1 in maintaining beta cell function.PDX1 also binds to the regulatory elements and increases insulin gene transcription.
+						<br>
+						<br>
+						<b>NEUROG3</b><br> Is a member of the basic helix–loop–helix transcription factor family involved in the central nervous system and embryonic pancreas development. Despite several studies, it remains unclear whether NEUROG3 is absolutely required for beta cell development in humans.
+						<br>
+						<br>
+						<b>MAFA</b><br> Also known as RIPE3b1, is a member of the MAF family of basic leucine zipper. It is a transcription factor that binds to the enhancer/promoter region of the insulin gene and drives insulin expression in response to glucose. Hence, the expression levels of MAFA are critical for proper beta cell maturation. For regenerative approaches, MAFA’s expression is also important to regenerate functional and mature beta cells from pluripotent stem cells.
+					</p>
+
+					<p>
+						Interaction among PDX1, NEUROG3, and MAFA
+						In addition to their independent roles in beta cell development and maturation, PDX1, NEUROG3, and MAFA are also mutually interacted/regulated during the pancreatic developmental process. PDX1 regulates the expression of NEUROG3 and MAFA in the development and reprogramming processes.
+
+					</p>
+
+					<div class="button_know" align="center">
+						<a class="external_knowmore" href="https://stemcellres.biomedcentral.com/articles/10.1186/s13287-017-0694-z" target="_blank" rel="nofollow">
+							<span>Read more</span><br>
+						</a>
+					</div>
+					<br>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="collapsible-container">
+		<br>
+		<button class="collapsible-coli" style="outline: none;">How Proteins Survive in Host Environments?</button>
+		<div class="content-collapsible">
+			<div>
+				<div>
+					<br>
+					<p>
+						As per literature the proteins PDX, MAFA and NGN3 have been able to survive in human organoids and gut cells in mice. There is no protease action on these proteins as they are pre-existent in the gut, in lower concentrations. The presence of these transcription factors at high concentrations will influence the regulatory pathways to produce insulin in the reprogrammed gut cells, while ensuring survival of the transcription factors as they are not considered foreign in the gut cells.
+					</p>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="animatedParent animateOnce " data-appear-top-offset='-200'>
+		<div class="animated fadeIn">
+			<div class="content" style="background-color:#fffff;">
+				<div class="container">
+					<h2 class="text">3) Targeting System</h2>
+					<p class="text">
+						There were a number of strategies thought of for the targeting system. But we finally decided on a two step targeting system. To ensure absolute accuracy in the attachment of our delivery vector to the target cell. It was imperative that transdifferentiation occurs specifically and only in the undifferentiated crypt cells of the duodenum.
+					</p>
+
+
+					<h4>A) Prior to Binding</h4>
+					<p>
+						pH Specific promoter upstream of Polyprotein sequence.
+						Antibody specific to Crypt Cells
+
+						We will display a Single domain Antibody (SdaB) with a beta intimin base attached to E.coli Nissle surface. The SdaB corresponds to the Lgr5 antigen exposed on the crypt cells in the gut. The antibodies ensure that the delivery vector binds to the right type of cells.
+						The single domain antibodies from camelids (nanobodies or VHH) bind to intimin a surface protein derived from EHEC.The display of the VHH on intimin guarantees a stronger affinity for the cell specific antigens. The sdABs also survived better on the E.coli surface with very little proteolysis or cell toxicity.
+						Thus this antibody display on E.coli surface specific to antigens on crypt cells is the first step that ensures accurate binding of the delivery vector to the crypt cells.
+
+						The strategies we are currently exploring involve displaying antibodies against cell-type-specific markers on E. coli’s surface10, displaying a cell-specific protease-sensitive T3SS inhibitor on E. coli’s surface, and fusing our effectors to C-terminal cytoplasmic retention signals downstream of the cleavage site of a cell-specific protease.
+					</p>
+
+					<h4>B) Post Binding</h4>
+					<p>
+						Our second step to ensure accuracy, comes after the effector proteins are introduced into the cytoplasm of the gut cell. The effector proteins are led by MAP 20 a short N terminal sequence which serves as a signal tag allowing the proteins to be translocated across the T3SS pore. The effector proteins are translocated in the form of a single polypeptide chain, where the three protein sequences are separated by protease cleavage sites.
+						The moment this polypeptide chain enters the gut cell, it will be transported to the nucleus,( due to the presence of a nuclear signal) a nucleus specific protease called SENP3/SENP5 will cleave the polypeptide chain, releasing the three effector proteins and allowing them to aid the transdifferentiation of the newly differentiated crypt cells of the duodenum, into glucose response insulin secreting beta islet like cells.
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="animatedParent animateOnce " data-appear-top-offset='-200'>
+		<div class="animated fadeIn">
+			<div class="content" style="background-color:#fffff;">
+				<div class="container">
+					<h2 class="text">4) Biosafety Mechanism</h2>
+					<p class="text">
+						With the usage of Genetically modified Organisms (GMOs) safety is a major concern. The usage of genetically modified bacteria has led to several claims and arguments about the unwarranted impacts on not only the consumer but also our surroundings. Keeping in mind this safety aspect at every step. We have made design considerations for the biosafety mechanism, which will ensure not only the safety of the microbiome in the gut of the host, the patient consuming the pill but also the environment in which the pills’ contents will be released.
+					</p>
+
+
+
+					<p>
+						<b>Expression</b><br>
+
+
+						To kill the engineered probiotic, we are constitutively expressing the Colicin E2 DNase domain "miniColicin" BBa_K1976048, that can degrade Host DNA whilst posing little threat to the gut microbiota.
+						In the bacteria’s active state we are inhibiting the toxin activity by constitutively expressing the anti-toxin,immunity protein IM2 BBa_K1976027 on the same plasmid.
+					</p>
+
+					<p>
+						<b>Killing Mechanism</b><br>
+
+						To activate the kill switch we are using a phosphate regulated promoter.
+						At high phosphate concentrations in the small intestine the promoter is inactive, allowing the bacteria to function.
+						At low phosphate concentrations in the colon, the PhoB promoter is activated, and transcribes the antisense RNA which binds to the anti-toxin repressing it. While the constitutively expressed toxin kills the bacteria, in the colon.
+
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="collapsible-container">
+		<button class="collapsible-coli" style="outline: none;">Reorganisation of code to prevent horizontal gene transfer</button>
+		<div class="content-collapsible">
+			<div>
+				<div>
+					<br>
+					<p>
+						The human gut is colonised by millions of bacteria. A major concern with our proposed probiotic THE BIG PIE, is its release into the small intestine, which could cause in horizontal gene transfer, resulting in lab made plasmids entering the other natural bacteria present in the gut microbiome.Keeping this in mind, we propose to use chromosomal integration of our parts in the final probiotic bacteria that we will introduce into the pills. The integration of our genetic circuits and cassettes into the chromosome will remove any possibility of horizontal gene transfer.
+					</p>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="collapsible-container">
+		<button class="collapsible-coli" style="outline: none;">Kill switch to regulate colonisation of the small intestine</button>
+		<div class="content-collapsible">
+			<div>
+				<div>
+					<br>
+					<p>
+						Another major concern is the release of GMOs from the gut which could be hazardous for the environment.
+						To avoid this we propose a single gate phosphate regulated kill switch that is activated in the colon and kills our probiotic bacteria by the time it is excreted and enters the environment.
+					</p>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<div class="content">
+		<section class="pre-footer-button-container">
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-1">
+						<div class="ch-info">
+							<h3>Description</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-2">
+						<div class="ch-info">
+							<h3>Design</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-3">
+						<div class="ch-info">
+							<h3>Parts</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-5">
+						<div class="ch-info">
+							<h3>Human Practices</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-6">
+						<div class="ch-info">
+							<h3>Model</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-4">
+						<div class="ch-info">
+							<h3 style="font-size:0.75rem;">Entrepreneurship</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-7">
+						<div class="ch-info">
+							<h3>Patent <br>Law</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-8">
+						<div class="ch-info">
+							<h3>Safety</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</section>
+
+		<div class="collapsible-container">
+			<button class="collapsible" style="outline: none;">References</button>
+			<div class="content-collapsible">
+				<p>
+					<li>
+						<a target="_blank" href="https://www.liebertpub.com/doi/full/10.1089/dia.2018.0101"> Ever-Increasing Insulin-Requiring Patients Globally<br></a>
+					</li>
+
+					<li>
+						<a target="_blank" href="https://www.diabetes.org/diabetes/medication-management/insulin-other-injectables/insulin-routines"> Insulin Routines<br></a>
+					</li>
+
+					<li>
+						<a target="_blank" href="https://economictimes.indiatimes.com/magazines/panache/how-insulin-therapy-is-proving-to-be-a-boon-for-type-1-diabetics/articleshow/65302579.cms?from=mdr">How insulin therapy is proving to be a boon for type-1 diabetics</a>
+					</li>
+
+					<li>
+						<a target="_blank" href="https://www.indiaspend.com/1-in-2-indian-diabetics-unaware-of-their-condition-study/">1 In 2 Indian Diabetics Unaware Of Their Condition: Study</a>
+					</li>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<footer id="myfooter" style="width:100%;margin-top: 1%;">
+		<div class="container-footer" style="margin-bottom: 0;background-color: #b8dbdb;width:100%;padding-left: 10%;padding-right:10%;">
+			<div class="row ">
+				<div class="col-md-4 text-center text-md-left ">
+					<div class="py-0">
+						<h3 class="my-4 text-dark"><span>BigPie</span></h3>
+						<p class="font-weight-light text-dark">
+							A project by Indian Institute of Science Education and Research Bhopal iGEM 2020 team.
+						</p>
+						<h3 class="my-4 text-dark"><span>Contact</span></h3>
+						<p class="font-weight-italic text-dark">igem@iiserb.ac.in</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 offset-md-4 text-white my-4 text-center text-md-left ">
+					<span class=" font-weight-bold text-dark ">Follow Us!</span>
+					<div class="py-2">
+						<a href="#"><i class="fab fa-linkedin fa-2x mx-3"></i></a><br>
+						<a href="#"><i class="fab fa-instagram fa-2x text- mx-3" style="color:#c13584"></i></a><br>
+						<a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a><br>
+						<a href="#"><i class="fab fa-facebook fa-2x mx-3"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--Counter-->
+	<script type="text/javascript">
+		$(".num").counterUp({
+			delay: 5,
+			time: 1500
+		});
+	</script>
+
+	<script>
+		/*Button reveal*/
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
+		/*Button reveal*/
+	</script>
+
+	<script>
+		/*Button reveal*/
+		var coll = document.getElementsByClassName("collapsible-coli");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
+		/*Button reveal*/
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="flickity.pkgd.min.js"></script>
+	<script src="css3-animate-it.js"></script>
+
+</body></html>
