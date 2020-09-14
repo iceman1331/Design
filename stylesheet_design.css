@@ -2,9 +2,10 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	width: 100%;
+	width: 100vw;
 	background-color: #ffffff;
 	box-sizing: border-box;
+	
 }
 
 body {
@@ -129,6 +130,11 @@ h1 {
 }
 
 r {
+	font-size: 2.5rem;
+	color:#001132;
+}
+
+r-2{
 	font-size: 3.75rem;
 	background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 	background-attachment: fixed;
@@ -139,7 +145,6 @@ r {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-
 h2 {
 	text-transform: none;
 	color: #000;
@@ -159,7 +164,7 @@ h4 {
 
 p {
 	font-family: 'Lato', sans-serif;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	text-align: justify;
 	color: #000;
 }
@@ -192,6 +197,9 @@ ul {
 	}
 
 	r {
+		font-size: 25px;
+	}
+	r-2 {
 		font-size: 50px;
 	}
 
@@ -392,8 +400,15 @@ external_knowmore {
 }
 
 @media(max-width:500px) {
-	.collapsible-coli {
+	.collapsible {
+		width: 90%;
+		border-radius: 5px;
+	}
+	.collapsible:hover {
 		width: 100%;
+	}
+	.collapsible-coli {
+		width: 90%;
 		border-radius: 5px;
 	}
 
