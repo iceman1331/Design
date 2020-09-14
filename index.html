@@ -13,7 +13,7 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<title>Design</title>
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
@@ -56,14 +56,14 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#"> <i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="https://iceman1331.github.io/homepage_2/"> <i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-project-diagram"></i> Project
 						</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="">Description</a>
+							<a class="dropdown-item" href="https://iceman1331.github.io/Description/index.html">Description</a>
 							<a class="dropdown-item" href="#">Contribution</a>
 							<a class="dropdown-item" href="#">Engineering Success</a>
 						</div>
@@ -134,11 +134,6 @@
 
 
 
-
-
-
-
-
 	<div id="cta">
 		<div class="desc-title">
 			<h1> Design </h1>
@@ -181,11 +176,13 @@
 		</div>
 	</div>
 
-	<div class="animatedParent animateOnce">
+	<div class="animatedParent animateOnce" data-appear-top-offset='50'>
 		<div class="animated fadeIn">
 			<div class="content">
 				<div class="container">
-					<h2 class="text"><r>1)</r> Vector for Transport and Delivery</h2>
+					<h2 class="text">
+						<r>1)</r> Vector for Transport and Delivery
+					</h2>
 					<p class="text">
 						In order to reduce the risk involved in the delivery system. We decided to use an FDA approved probiotic bacteria E.coli Nissle 1917. The bacteria will be cloned with plasmids expressing a molecular syringe called EPEC T3SS along with the 3 transcription factors of our choice PDX1, MAFA and NGN3 which will be maintained in the form of a single linear polypeptide an export signal peptide called Map 20.
 					</p>
@@ -245,11 +242,13 @@
 
 
 
-	<div class="animatedParent animateOnce ">
+	<div class="animatedParent animateOnce" data-appear-top-offset='50'>
 		<div class="animated fadeIn">
-			<div class="content"  style="background-color:#f2f2f2;">
+			<div class="content" style="background-color:#f2f2f2;">
 				<div class="container">
-					<h2 class="text"><r>2)</r> Attachment and Injection of Proteins</h2>
+					<h2 class="text">
+						<r>2)</r> Attachment and Injection of Proteins
+					</h2>
 					<p class="text">
 						We intend to use a novel delivery mechanism : Type III Secretion System (T3SS)8 -‘molecular syringe’ found on certain Gram-negative bacteria. The T3SS cloned in E.coli Nissle will transport the linear polypeptide sequence consisting of effector proteins’ - PDX, MAFA and NGN3 into the crypt cells in the gut.
 					</p>
@@ -323,11 +322,13 @@
 
 
 
-	<div class="animatedParent animateOnce ">
+	<div class="animatedParent animateOnce " data-appear-top-offset='50'>
 		<div class="animated fadeIn">
 			<div class="content" style="background-color:#fffff;">
 				<div class="container">
-					<h2 class="text"><r>3)</r> Targeting System</h2>
+					<h2 class="text">
+						<r>3)</r> Targeting System
+					</h2>
 					<p class="text">
 						There were a number of strategies thought of for the targeting system. But we finally decided on a two step targeting system. To ensure absolute accuracy in the attachment of our delivery vector to the target cell. It was imperative that transdifferentiation occurs specifically and only in the undifferentiated crypt cells of the duodenum.
 					</p>
@@ -358,11 +359,13 @@
 
 
 
-	<div class="animatedParent animateOnce ">
+	<div class="animatedParent animateOnce " data-appear-top-offset='-50'>
 		<div class="animated fadeIn">
 			<div class="content" style="background-color:#f2f2f2;">
 				<div class="container">
-					<h2 class="text"><r>4)</r> Biosafety Mechanism</h2>
+					<h2 class="text">
+						<r>4)</r> Biosafety Mechanism
+					</h2>
 					<p class="text">
 						With the usage of Genetically modified Organisms (GMOs) safety is a major concern. The usage of genetically modified bacteria has led to several claims and arguments about the unwarranted impacts on not only the consumer but also our surroundings. Keeping in mind this safety aspect at every step. We have made design considerations for the biosafety mechanism, which will ensure not only the safety of the microbiome in the gut of the host, the patient consuming the pill but also the environment in which the pills’ contents will be released.
 					</p>
@@ -600,25 +603,24 @@
 		/*Button reveal*/
 	</script>
 	<script>
-			/*Button reveal*/
-			var coll = document.getElementsByClassName("collapsible-coli-large");
-			var i;
+		/*Button reveal*/
+		var coll = document.getElementsByClassName("collapsible-coli-large");
+		var i;
 
-			for (i = 0; i < coll.length; i++) {
-				coll[i].addEventListener("click", function() {
-					this.classList.toggle("active");
-					var content = this.nextElementSibling;
-					if (content.style.maxHeight) {
-						content.style.maxHeight = null;
-					} else {
-						content.style.maxHeight = content.scrollHeight + "px";
-					}
-				});
-			}
-			/*Button reveal*/
-		</script>
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
+		/*Button reveal*/
+	</script>
 
 	<script src="css3-animate-it.js"></script>
 
-</body>
-</html>
+</body></html>
