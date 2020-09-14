@@ -13,8 +13,8 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Description</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.5" />
+	<title>Design</title>
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
@@ -37,7 +37,7 @@
 
 <body>
 	<div class="loader">
-		<video autoplay muted loop style="height: auto;" src="loader.mp4"></video>
+		<video autoplay muted loop src="loader.mp4"></video>
 	</div>
 
 	<!--Loader-->
@@ -47,9 +47,6 @@
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
 	</script>
-
-
-
 
 	<header>
 		<nav class="navbar navbar-expand-md navbar-light py-0" id="mynav" style="background-color: #ffdb82;">
@@ -155,7 +152,7 @@
 			<div class="content">
 				<div class="container">
 					<h1 class="text hr1">
-						<r> P</r>roject Design
+						<r>P</r>roject Design
 					</h1>
 					<p>
 						BIG PIE is a biological delivery system created to allow insulin production in-vivo(within the body). The objective of BIG PIE is to compensate for the decreased/defective beta islet cells in the pancreas of diabetes patients by serving as a natural alternative within the host and replacing the need for external sources of insulin in diabetes patients.
@@ -168,8 +165,8 @@
 		</div>
 	</div>
 
-	<div class="animatedParent animateOnce">
-		<div class="animated fadeInRight">
+	<div class='animatedParent animateOnce'>
+		<div class='animated fadeInRight'>
 			<div class="content" style="background-color:#f2f2f2;">
 				<div class="container">
 					<h1 class="text hr1">Project Principle</h1>
@@ -179,7 +176,6 @@
 						(mutagenesis, oncogenesis<sup>1</sup> and immunogenicity<sup>2</sup>). We decided to replace the viral vector with a probiotic bacterial vector that is safely accepted into the host.
 						Keeping in mind these aspects our design stands on 4 pillars which form the backbone of our work.
 					</p>
-					<br>
 				</div>
 			</div>
 		</div>
@@ -249,9 +245,9 @@
 
 
 
-	<div class="animatedParent animateOnce " data-appear-top-offset='-200'>
+	<div class="animatedParent animateOnce ">
 		<div class="animated fadeIn">
-			<div class="content" style="background-color:#fffff;">
+			<div class="content"  style="background-color:#f2f2f2;">
 				<div class="container">
 					<h2 class="text">2) Attachment and Injection of Proteins</h2>
 					<p class="text">
@@ -326,7 +322,8 @@
 	</div>
 
 
-	<div class="animatedParent animateOnce " data-appear-top-offset='-200'>
+
+	<div class="animatedParent animateOnce ">
 		<div class="animated fadeIn">
 			<div class="content" style="background-color:#fffff;">
 				<div class="container">
@@ -361,9 +358,9 @@
 
 
 
-	<div class="animatedParent animateOnce " data-appear-top-offset='-200'>
+	<div class="animatedParent animateOnce ">
 		<div class="animated fadeIn">
-			<div class="content" style="background-color:#fffff;">
+			<div class="content" style="background-color:#f2f2f2;">
 				<div class="container">
 					<h2 class="text">4) Biosafety Mechanism</h2>
 					<p class="text">
@@ -395,7 +392,7 @@
 	</div>
 
 	<div class="collapsible-container">
-		<button class="collapsible-coli" style="outline: none;">Reorganisation of code to prevent horizontal gene transfer</button>
+		<button class="collapsible-coli-large" style="outline: none;">Reorganisation of code to prevent horizontal gene transfer</button>
 		<div class="content-collapsible">
 			<div>
 				<div>
@@ -410,7 +407,7 @@
 	</div>
 	<br>
 	<div class="collapsible-container">
-		<button class="collapsible-coli" style="outline: none;">Kill switch to regulate colonisation of the small intestine</button>
+		<button class="collapsible-coli-large" style="outline: none;">Kill switch to regulate colonisation of the small intestine</button>
 		<div class="content-collapsible">
 			<div>
 				<div>
@@ -563,13 +560,7 @@
 		</div>
 	</footer>
 
-	<!--Counter-->
-	<script type="text/javascript">
-		$(".num").counterUp({
-			delay: 5,
-			time: 1500
-		});
-	</script>
+
 
 	<script>
 		/*Button reveal*/
@@ -608,9 +599,26 @@
 		}
 		/*Button reveal*/
 	</script>
+	<script>
+			/*Button reveal*/
+			var coll = document.getElementsByClassName("collapsible-coli-large");
+			var i;
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="flickity.pkgd.min.js"></script>
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight) {
+						content.style.maxHeight = null;
+					} else {
+						content.style.maxHeight = content.scrollHeight + "px";
+					}
+				});
+			}
+			/*Button reveal*/
+		</script>
+
 	<script src="css3-animate-it.js"></script>
 
-</body></html>
+</body>
+</html>
