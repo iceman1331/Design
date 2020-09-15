@@ -16,7 +16,19 @@ body {
 	width: 100%;
 	padding-left: 10%;
 	padding-right: 10%;
-	margin: 0px auto;
+}
+
+.content:nth-child(odd) {
+	background-color: #fff;
+	
+}
+
+.content:nth-child(even) {
+	background-color:#f2f2f2;
+	
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
 }
 
 @media(max-width:500px) {
@@ -115,7 +127,7 @@ body {
 }
 
 .container {
-	margin: 45px 0;
+	margin: 25px 0;	
 }
 
 h1 {
@@ -238,8 +250,10 @@ sup {
 }
 
 .centred-child video{
-	width: 70%;
+	width: 90%;
+	background-color: #000;
 	height: auto;
+	
 }
 
 @media(max-width:500px){
@@ -344,7 +358,7 @@ external_knowmore {
 	width: 80%;
 }
 
-.collapsible {
+.ref_collapsible {
 	background-color: #777;
 	color: white;
 	display: block;
@@ -361,7 +375,7 @@ external_knowmore {
 }
 
 
-.collapsible:hover {
+.ref_collapsible:hover {
 	background-color: #555;
 	border-radius: 10px;
 	background-image: url(ref.jpg);
@@ -384,6 +398,13 @@ external_knowmore {
 	transition: max-height 0.3s ease-out;
 	background-color: #f1f1f1;
 }
+
+@media(max-width:500px) {
+	.content-collapsible {
+		padding: 0 15px;
+	}
+}
+
 
 .collapsible-coli {
 	background-color: #777;
@@ -461,28 +482,6 @@ external_knowmore {
 
 	.collapsible-coli-large:hover {
 		width: 100%;
-	}
-}
-
-.content-collapsible-coli {
-	padding: 0 50px;
-	max-height: 0;
-	border-radius: 30px;
-	box-decoration-break: none;
-	overflow: hidden;
-	border-left: 1px solid #555;
-	border-right: 1px solid #555;
-	transition: max-height 0.5s ease-out;
-	background-color: rgba(153, 187, 255, 0.5);
-}
-
-@media(max-width:500px) {
-	.content-collapsible-coli {
-		padding: 0 10px;
-	}
-
-	.content-collapsible {
-		padding: 0 15px;
 	}
 }
 

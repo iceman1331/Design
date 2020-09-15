@@ -46,7 +46,6 @@
 			const loader = document.querySelector(".loader");
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
-
 	</script>
 
 	<header>
@@ -142,10 +141,9 @@
 	</div>
 
 
-
-	<div class="animatedParent animateOnce">
-		<div class="animated fadeInLeft">
-			<div class="content">
+	<div class="content">
+		<div class="animatedParent animateOnce">
+			<div class="animated fadeInLeft">
 				<div class="container">
 					<h1 class="text hr1">
 						<r-2>P</r-2>roject Design
@@ -161,9 +159,9 @@
 		</div>
 	</div>
 
-	<div class='animatedParent animateOnce'>
-		<div class='animated fadeInRight'>
-			<div class="content" style="background-color:#f2f2f2;">
+	<div class="content">
+		<div class='animatedParent animateOnce'>
+			<div class='animated fadeInRight'>
 				<div class="container">
 					<h1 class="text hr1">Project Principle</h1>
 					<p class="text">
@@ -175,18 +173,20 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="centred-child">
-		<div class="img">
-			<img src="imgs/transdiff.png" alt="" />
-			<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
+		<div class="centred-child">
+			<div class="img">
+				<img src="imgs/transdiff.png" alt="" />
+				<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
+			</div>
 		</div>
 	</div>
 
-	<div class="animatedParent animateOnce" data-appear-top-offset='50'>
-		<div class="animated fadeIn">
-			<div class="content">
+
+
+	<div class="content">
+		<div class="animatedParent animateOnce" data-appear-top-offset='50'>
+			<div class="animated fadeIn">
+
 				<div class="container">
 					<h2 class="text">
 						<r>1)</r> Vector for Transport and Delivery
@@ -249,10 +249,10 @@
 
 
 
+	<div class="content">
+		<div class="animatedParent animateOnce" data-appear-top-offset='50'>
+			<div class="animated fadeIn">
 
-	<div class="animatedParent animateOnce" data-appear-top-offset='50'>
-		<div class="animated fadeIn">
-			<div class="content" style="background-color:#f2f2f2;">
 				<div class="container">
 					<h2 class="text">
 						<r>2)</r> Attachment and Injection of Proteins
@@ -344,10 +344,10 @@
 	</div>
 
 
+	<div class="content">
+		<div class="animatedParent animateOnce " data-appear-top-offset='50'>
+			<div class="animated fadeIn">
 
-	<div class="animatedParent animateOnce " data-appear-top-offset='50'>
-		<div class="animated fadeIn">
-			<div class="content" style="background-color:#fffff;">
 				<div class="container">
 					<h2 class="text">
 						<r>3)</r> Targeting System
@@ -373,7 +373,7 @@
 					<p>
 						Our second step to ensure accuracy, comes after the effector proteins are introduced into the cytoplasm of the gut cell. The effector proteins are led by MAP 20 a short N terminal sequence which serves as a signal tag allowing the proteins to be translocated across the T3SS pore. The effector proteins are translocated in the form of a single polypeptide chain, where the three protein sequences are separated by protease cleavage sites.
 					</p>
-					
+
 					<div class="centred-child">
 						<div class="img">
 							<img src="imgs/design_%20vector%20delivery.jpg" alt="" />
@@ -386,18 +386,19 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div class="centred-child">
+		<div class="centred-child">
 		<video autoplay muted playsinline src="imgs/Desc%20Vid-1.mp4"></video>
 	</div>
+	</div>
+
+	
 
 
 
+	<div class="content">
+		<div class="animatedParent animateOnce " data-appear-top-offset='-50'>
+			<div class="animated fadeIn">
 
-	<div class="animatedParent animateOnce " data-appear-top-offset='-50'>
-		<div class="animated fadeIn">
-			<div class="content" style="background-color:#f2f2f2;">
 				<div class="container">
 					<h2 class="text">
 						<r>4)</r> Biosafety Mechanism
@@ -549,7 +550,7 @@
 		</section>
 
 		<div class="collapsible-container">
-			<button class="collapsible" style="outline: none;">References</button>
+			<button class="ref_collapsible" style="outline: none;">References</button>
 			<div class="content-collapsible">
 				<p>
 					<li>
@@ -603,7 +604,7 @@
 
 	<script>
 		/*Button reveal*/
-		var coll = document.getElementsByClassName("collapsible");
+		var coll = document.getElementsByClassName("ref_collapsible");
 		var i;
 
 		for (i = 0; i < coll.length; i++) {
@@ -618,7 +619,6 @@
 			});
 		}
 		/*Button reveal*/
-
 	</script>
 
 	<script>
@@ -638,7 +638,6 @@
 			});
 		}
 		/*Button reveal*/
-
 	</script>
 	<script>
 		/*Button reveal*/
@@ -657,11 +656,8 @@
 			});
 		}
 		/*Button reveal*/
-
 	</script>
 
 	<script src="css3-animate-it.js"></script>
 
-</body>
-
-</html>
+</body></html>
