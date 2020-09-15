@@ -15,7 +15,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<title>Design</title>
-	<link rel="preload" href="loader.mp4" as="video"> 
+	<link rel="preload" href="loader.mp4" as="video">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
 	<link rel="stylesheet" href="bootstrap.min.css" />
@@ -46,6 +46,7 @@
 			const loader = document.querySelector(".loader");
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
+
 	</script>
 
 	<header>
@@ -176,6 +177,13 @@
 		</div>
 	</div>
 
+	<div class="centred-child">
+		<div class="img">
+			<img src="imgs/transdiff.png" alt="" />
+			<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
+		</div>
+	</div>
+
 	<div class="animatedParent animateOnce" data-appear-top-offset='50'>
 		<div class="animated fadeIn">
 			<div class="content">
@@ -253,6 +261,15 @@
 						We intend to use a novel delivery mechanism : Type III Secretion System (T3SS)8 -‘molecular syringe’ found on certain Gram-negative bacteria. The T3SS cloned in E.coli Nissle will transport the linear polypeptide sequence consisting of effector proteins’ - PDX, MAFA and NGN3 into the crypt cells in the gut.
 					</p>
 
+
+					<div class="centred-child">
+						<div class="img">
+							<img src="imgs/t3ss.png" alt="" />
+							<div class="img-desc"><strong style="font-weight:900;">Image II: </strong>image description.</div>
+						</div>
+					</div>
+
+
 					<p>
 						The EPEC T3SS is an injectisome structurally comprising a ‘basal body’ and ‘needle-like filament’. Proteins will be delivered by T3SS in a two-step process. Firstly, contact with the intestinal epithelial cells will trigger the secretion of a hydrophobic ‘translocon’ protein, which will insert itself into the cell membrane forming a pore. This will create a continuous path between the bacterial and eukaryotic cytoplasm through the lumen of the needle and pore.
 
@@ -314,7 +331,13 @@
 					<p>
 						As per literature the proteins PDX, MAFA and NGN3 have been able to survive in human organoids and gut cells in mice. There is no protease action on these proteins as they are pre-existent in the gut, in lower concentrations. The presence of these transcription factors at high concentrations will influence the regulatory pathways to produce insulin in the reprogrammed gut cells, while ensuring survival of the transcription factors as they are not considered foreign in the gut cells.
 					</p>
-					<br>
+
+					<div class="centred-child">
+						<div class="img">
+							<img src="imgs/tfs.png" alt="" />
+							<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -349,13 +372,26 @@
 					<h4>B) Post Binding</h4>
 					<p>
 						Our second step to ensure accuracy, comes after the effector proteins are introduced into the cytoplasm of the gut cell. The effector proteins are led by MAP 20 a short N terminal sequence which serves as a signal tag allowing the proteins to be translocated across the T3SS pore. The effector proteins are translocated in the form of a single polypeptide chain, where the three protein sequences are separated by protease cleavage sites.
+					</p>
+					
+					<div class="centred-child">
+						<div class="img">
+							<img src="imgs/design_%20vector%20delivery.jpg" alt="" />
+							<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
+						</div>
+					</div>
+					<p>
 						The moment this polypeptide chain enters the gut cell, it will be transported to the nucleus,( due to the presence of a nuclear signal) a nucleus specific protease called SENP3/SENP5 will cleave the polypeptide chain, releasing the three effector proteins and allowing them to aid the transdifferentiation of the newly differentiated crypt cells of the duodenum, into glucose response insulin secreting beta islet like cells.
 					</p>
-
 				</div>
 			</div>
 		</div>
 	</div>
+	
+	<div class="centred-child">
+		<video autoplay muted playsinline src="imgs/Desc%20Vid-1.mp4"></video>
+	</div>
+
 
 
 
@@ -582,6 +618,7 @@
 			});
 		}
 		/*Button reveal*/
+
 	</script>
 
 	<script>
@@ -601,6 +638,7 @@
 			});
 		}
 		/*Button reveal*/
+
 	</script>
 	<script>
 		/*Button reveal*/
@@ -619,8 +657,11 @@
 			});
 		}
 		/*Button reveal*/
+
 	</script>
 
 	<script src="css3-animate-it.js"></script>
 
-</body></html>
+</body>
+
+</html>

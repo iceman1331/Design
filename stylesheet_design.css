@@ -237,11 +237,22 @@ sup {
 	text-align: center;
 }
 
+.centred-child video{
+	width: 70%;
+	height: auto;
+}
+
+@media(max-width:500px){
+	.centred-child video{
+		width: 100%;
+	}
+}
+
 .img {
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-	width: 32%;
+	width: 42%;
 	margin-left: 1%;
 	margin-right: 1%;
 	margin-top: 0;
