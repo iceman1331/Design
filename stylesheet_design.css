@@ -5,7 +5,7 @@ body {
 	width: 100vw;
 	background-color: #ffffff;
 	box-sizing: border-box;
-	
+
 }
 
 body {
@@ -20,17 +20,17 @@ body {
 
 .content:nth-child(odd) {
 	background-color: #fff;
-	
+
 }
 
 .content:nth-child(even) {
-	background-color:#f2f2f2;
-	
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-       -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 10px 6px -6px #777;
-}
+	background-color: #f2f2f2;
 
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
+	
 @media(max-width:500px) {
 	.content {
 		padding-left: 2%;
@@ -54,7 +54,7 @@ body {
 	z-index: 9999;
 }
 
-.loader video{
+.loader video {
 	height: 100%;
 	width: 100%;
 }
@@ -127,7 +127,7 @@ body {
 }
 
 .container {
-	margin: 25px 0;	
+	margin: 25px 0;
 }
 
 h1 {
@@ -143,10 +143,10 @@ h1 {
 
 r {
 	font-size: 2.5rem;
-	color:#001132;
+	color: #001132;
 }
 
-r-2{
+r-2 {
 	font-size: 3.75rem;
 	background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 	background-attachment: fixed;
@@ -157,6 +157,7 @@ r-2{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
 h2 {
 	text-transform: none;
 	color: #000;
@@ -211,6 +212,7 @@ ul {
 	r {
 		font-size: 25px;
 	}
+
 	r-2 {
 		font-size: 50px;
 	}
@@ -249,15 +251,15 @@ sup {
 	text-align: center;
 }
 
-.centred-child video{
+.centred-child video {
 	width: 90%;
 	background-color: #000;
 	height: auto;
-	
+
 }
 
-@media(max-width:500px){
-	.centred-child video{
+@media(max-width:500px) {
+	.centred-child video {
 		width: 100%;
 	}
 }
@@ -437,9 +439,11 @@ external_knowmore {
 		width: 90%;
 		border-radius: 5px;
 	}
+
 	.collapsible:hover {
 		width: 100%;
 	}
+
 	.collapsible-coli {
 		width: 90%;
 		border-radius: 5px;
@@ -489,7 +493,8 @@ external_knowmore {
 .hr1 {
 	text-transform: uppercase;
 	animation: background-move 10s infinite;
-	background: url(Backgrounds/13.jpg);/*|13|*/
+	background: url(Backgrounds/13.jpg);
+	/*|13|*/
 	font-weight: 1000;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -518,7 +523,7 @@ external_knowmore {
 }
 
 
-.content-collapsible img{
+.content-collapsible img {
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
@@ -526,14 +531,15 @@ external_knowmore {
 	margin-left: 1%;
 	margin-right: 1%;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 10px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 
-@media(max-width:500px){
-	.content-collapsible img{
+@media(max-width:500px) {
+	.content-collapsible img {
 		width: 100%;
-		margin:0;
+		margin: 0;
 		border-radius: 2px;
 	}
 
